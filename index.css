@@ -1,0 +1,238 @@
+/*------t_r_b_l--------*/
+
+html {
+    scroll-behavior: smooth;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 100vh;
+    background: pink;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+
+/* body::-webkit-scrollbar {
+    width: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 0;
+    background: green;
+} */
+
+button,
+li,
+a {
+    cursor: pointer;
+}
+
+button {
+    font-family: courier;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 35%;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+
+/*---------------------------------------------------------*/
+
+.one {
+    height: 80vh;
+    display: flex;
+    margin: 0%;
+    background: crimson;
+}
+
+.one::before {
+    margin: 0%;
+    content: "";
+    background-image: url("img/one.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*----*/
+    height: 100%;
+    width: 100%;
+    /*----*/
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    /*----*/
+    opacity: 0.75;
+}
+
+h6 {
+    all: initial;
+    letter-spacing: -1px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    /* opacity: 0.7; */
+    font-size: 35px;
+}
+
+p {
+    margin: 0%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0%;
+    padding: 0%;
+}
+
+li {
+    z-index: 5;
+    list-style: none;
+    padding: 10px;
+    color: white;
+    margin: 0;
+}
+
+.mainmatter {
+    position: absolute;
+    margin: 13% 0% 0% 17%;
+    font-size: x-large;
+    z-index: 1;
+}
+
+
+/*-----------------------------------BELL_Mail_DRAWER------------------------------------*/
+
+.b_m_d {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    justify-content: space-evenly;
+}
+
+.b_m_d li {
+    all: initial;
+}
+
+
+/*----------------------------------------Projects----------------------------------------*/
+
+.projects {
+    white-space: nowrap;
+    position: relative;
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+
+.projects1 {
+    overflow-x: scroll;
+    border: none;
+}
+
+.pro {
+    display: inline-block;
+    margin: 0.3% 0% 0% 0%;
+    height: 400px;
+    width: 20%;
+}
+
+.projects1::-webkit-scrollbar {
+    height: 5px;
+    width: 200px;
+    background-color: #a7d7ff;
+    border-radius: 24px;
+}
+
+.projects1::-webkit-scrollbar-thumb {
+    height: 0px;
+    background-color: darkgrey;
+}
+
+
+/*----------------------------------------PRICING----------------------------------------*/
+
+.pricing {
+    position: absolute;
+    height: 100%;
+}
+
+.pricing1 {
+    height: 100%;
+}
+
+.pricing2 {
+    display: block;
+    margin-top: 6%;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/*------------------------------Footer_Ball-------------------------------------*/
+
+footer>span {
+    animation: marquee 2s infinite;
+    transition: 2s;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(10em);
+    }
+    25% {
+        transform: translateX(25em);
+    }
+    50% {
+        transform: translateX(50em);
+    }
+    75% {
+        transform: translateX(75em);
+    }
+    100% {
+        transform: translateX(100em);
+    }
+}
+
+.to_top {
+    all: initial;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+}
+
+.to_top {
+    border-radius: 50%;
+    animation: bouncer 02s linear infinite;
+}
+
+@keyframes bouncer {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*-------------------------------------responsive--------------------------*/
+
+@media screen and (min-width:500px) {
+    .nav {
+        width: 100%;
+    }
+}
